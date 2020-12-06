@@ -1,0 +1,242 @@
+main {
+  color: rgb(92, 92, 92);
+  text-align: center;
+  background-color: #fff;
+  position: relative;
+  top: 55px;
+  height: auto;
+  padding: 20px;
+  align-items: center;
+}
+h2 {
+  padding: 20px;
+  letter-spacing: 2px;
+  width: 70%;
+  margin: auto;
+  color: white;
+  opacity: 0.8;
+  background: #101820ff;
+}
+/*Product*/
+.coverX {
+  animation: dropX 1.5s;
+}
+@keyframes dropX {
+  0% {
+    opacity: 0;
+    transform: translateX(-80px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0px);
+  }
+}
+/*END PRODUCT*/
+/*Pet-Main*/
+.pet-main {
+  display: flex;
+  justify-content: space-around;
+  width: 70%;
+  height: 415px;
+  align-items: center;
+  margin: auto;
+}
+
+.pet-main button {
+  background-color: #fd7e07;
+  color: white;
+  padding: 14px 20px;
+  margin: 5px 0;
+  border: none;
+  font-size: 16px;
+  cursor: pointer;
+  width: 80%;
+}
+
+.pet-main button:hover {
+  opacity: 0.8;
+}
+.coverY {
+  animation: dropY 1.5s;
+}
+@keyframes dropY {
+  0% {
+    opacity: 0;
+    transform: translateY(-80px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0px);
+  }
+}
+/*END PET-MAIN*/
+
+/*how to shop*/
+.process {
+  width: 70%;
+  margin: auto;
+  text-align: left;
+}
+@media screen and (max-width: 1200px) {
+  main {
+    height: auto;
+  }
+}
+@media screen and (max-width: 768px) {
+  .pet-main {
+    flex-direction: column;
+    height: auto;
+  }
+  .pet-main button {
+    width: 100%;
+  }
+  h2 {
+    margin-bottom: 20px;
+    width: 100%;
+  }
+}
+
+/*img-sec*/
+.pet-main img {
+  box-shadow: 0px 1px 5px 0px rgb(102, 101, 101);
+  border-radius: 10px;
+  width: 220px;
+  height: 140px;
+}
+
+/*admin page*/
+.admin-post {
+  width: 70%;
+  margin: auto;
+  background-color: #ccc;
+  background-image: url("../img/bg.png");
+  background-size: cover;
+  display: flex;
+  justify-content: space-around;
+  flex-direction: column;
+  height: 50vh;
+}
+.admin-post input[type="text"] {
+  font-size: 20px;
+  width: 50%;
+  height: 30vh;
+  border-color: #fd7e07;
+}
+.admin-post input[type="submit"] {
+  width: 10%;
+  height: 5vh;
+  background: #fd7e07;
+  border: none;
+}
+@media screen and (max-width: 768px) {
+  .admin-post input[type="text"] {
+    width: 100%;
+  }
+  .admin-post input[type="submit"] {
+    width: 100%;
+  }
+  .admin-post {
+    width: 90%;
+  }
+}
+/*admin-product*/
+.admin-product-form {
+  width: 70%;
+  margin: auto;
+  background-color: rgb(180, 180, 180);
+}
+.admin-product-form input[type="text"] {
+  font-size: 16px;
+  color: #333;
+  border-color: none;
+}
+.admin-product-form input[type="submit"] {
+  margin: 20px 0;
+  font-size: 14px;
+  width: 50%;
+  background: #fd7e07;
+  border: none;
+  padding: 20px;
+  cursor: pointer;
+  color: white;
+}
+.admin-product-form input[type="reset"] {
+  margin: 0 0 20px 0;
+  font-size: 14px;
+  width: 50%;
+  background: #c80101;
+  border: none;
+  padding: 20px;
+  opacity: 0.6;
+  cursor: pointer;
+  color: white;
+  border-color: none;
+}
+
+/*home-customer&veterinarian*/
+.updates {
+  width: 70%;
+  align-items: center;
+  margin: auto;
+  display: flex;
+  justify-content: space-around;
+}
+.update-0 {
+  background-color: rgb(68, 68, 68);
+  width: 20%;
+  height: 20%;
+  border-radius: 50%;
+  padding: 20px;
+  font-size: 100px;
+}
+.update-1 {
+  background-color: rgb(68, 68, 68);
+  width: 20%;
+  height: 20%;
+  border-radius: 50%;
+  padding: 20px;
+  font-size: 100px;
+}
+.update-2 {
+  background-color: rgb(68, 68, 68);
+  width: 20%;
+  height: 20%;
+  border-radius: 50%;
+  padding: 20px;
+  font-size: 100px;
+}
+@media screen and (max-width: 768px) {
+  .update-0,
+  .update-1,
+  .update-2 {
+    width: 25%;
+    height: 25%;
+    font-size: 20px;
+  }
+  .home-img {
+    width: 80%;
+  }
+}
+
+#coverX {
+  animation: dropY 1.5s;
+}
+@keyframes dropY {
+  0% {
+    opacity: 0;
+    transform: translateX(-80px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0px);
+  }
+}
+
+textarea {
+  width: 50%;
+}
+@media screen and (max-width: 768px) {
+  textarea {
+    width: 100%;
+  }
+}

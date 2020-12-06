@@ -1,0 +1,138 @@
+.intro-page {
+  margin-top: 20px;
+  display: flex;
+  justify-content: space-around;
+  height: 70vh;
+}
+.intro-image img {
+  filter: drop-shadow(0px 10px 10px rgb(41, 41, 41));
+  opacity: 0.6;
+}
+.intro-image {
+  flex: 1;
+}
+.intro-form {
+  flex: 1;
+}
+@media screen and (max-width: 768px) {
+  .intro-page {
+    flex-direction: column;
+    height: 74vh;
+  }
+  .intro-form {
+    flex: 2;
+  }
+  .intro-image img {
+    display: none;
+  }
+  form {
+    width: 90%;
+    align-items: center;
+    transition: all 0.3s ease;
+  }
+}
+.intro-form h3 {
+  background: #101820ff;
+  opacity: 0.9;
+  padding-bottom: 5px;
+  color: white;
+  width: 50%;
+  border-radius: 10px 10px 0px 0px;
+}
+/*sign-up style*/
+form {
+  background: #101820ff;
+  opacity: 0.9;
+  border-radius: 10px;
+  padding: 20px;
+  width: 90%;
+  align-items: center;
+  transition: all 0.3s ease;
+}
+.form {
+  position: relative;
+  height: 50px;
+}
+
+.form input {
+  background: transparent;
+  width: 100%;
+  height: 100%;
+  color: white;
+  padding-top: 20px;
+  border: none;
+  outline: none;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+.form label {
+  color: orange;
+  position: absolute;
+  bottom: 0px;
+  left: 0%;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+  border-bottom: 1px solid rgb(194, 194, 194);
+}
+
+.content-name {
+  position: absolute;
+  bottom: 5px;
+  left: 0px;
+  transition: all 0.3s ease;
+}
+
+.btn {
+  margin: 20px 0px 20px 0px;
+}
+.btn-save {
+  width: 40%;
+  height: 5vh;
+  border: none;
+  background: rgb(211, 138, 4);
+  transition: all 0.3s ease;
+  cursor: pointer;
+}
+.btn-reset {
+  width: 40%;
+  height: 5vh;
+  border: none;
+  background: rgb(194, 194, 194);
+  transition: all 0.3s ease;
+  cursor: pointer;
+}
+.btn-save:hover {
+  transition: all 0.3s ease;
+  background: orange;
+}
+.btn-reset:hover {
+  transition: all 0.3s ease;
+  background: white;
+}
+.form input:focus + .label-name .content-name,
+.form input:valid + .label-name .content-name {
+  transform: translateY(-150%);
+  font-size: 14px;
+  color: rgb(180, 118, 4);
+}
+
+.userType {
+  display: flex;
+  background: rgb(224, 223, 223);
+  justify-content: space-around;
+  width: 100%;
+  height: 80px;
+  align-items: center;
+}
+.userType div:hover {
+  cursor: pointer;
+}
+.userType i:hover {
+  color: #fd7e07;
+}
